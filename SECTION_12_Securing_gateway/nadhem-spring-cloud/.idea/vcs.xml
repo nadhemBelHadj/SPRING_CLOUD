@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/../.." vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../SECTION_05_CONFIGSERVER/nadhem-spring-cloud/config-repo" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../SECTION_06_Intro_to_Docker/nadhem-spring-cloud/config-repo" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../SECTION_07_Mysql_As_Docker/nadhem-spring-cloud/config-repo" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../SECTION_08_DOCKERIZE_VOS_MS/nadhem-spring-cloud/config-repo" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../SECTION_09_Cloud Bus/nadhem-spring-cloud/config-repo" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../SECTION_10_Resilience4J/nadhem-spring-cloud/config-repo" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/config-repo" vcs="Git" />
+  </component>
+</project>

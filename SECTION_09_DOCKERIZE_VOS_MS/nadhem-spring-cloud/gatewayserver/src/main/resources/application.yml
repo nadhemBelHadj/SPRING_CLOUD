@@ -1,0 +1,39 @@
+server:
+  port: 8888
+spring:
+  application:
+    name: gatewayserver
+  cloud:
+    config:
+      enabled: false
+    discovery:
+      enabled: true
+    gateway:
+      routes:
+        - id : r1
+          uri : lb://DEPARTMENT
+          predicates:
+            - Path=/api/departments/**
+        - id: r2
+          uri: lb://TEACHER
+          predicates:
+            - Path= /api/teachers/**
+      discovery:
+        locator:
+          enabled: false
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    gateway:
+      access: unrestricted
+eureka:
+  client:
+   register-with-eureka: true
+   fetchRegistry: true
+   serviceUrl:
+    defaultZone: ${DISCOVERY_SERVICE_URL:http://localhost:8761/eureka}
+    instance:
+     prefer-ip-address: true

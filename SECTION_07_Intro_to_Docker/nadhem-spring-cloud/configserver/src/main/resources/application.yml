@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: "configserver"
+  profiles:
+    # active: native
+    active: git
+  cloud:
+    config:
+     server:
+       git:
+        uri: https://github.com/nadhemBelHadj/config-repo.git
+        default-label: main
+        clone-on-start: true
+      #native:
+        #search-loactions : "classpath:/config"
+        # search-locations: file:///C:/Spring_Cloud_2024/IntelliJ_workspace/demo/nadhem-spring-cloud/config-repo/
+
+server:
+  port: 9999
+
