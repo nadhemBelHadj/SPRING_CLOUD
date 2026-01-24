@@ -1,5 +1,6 @@
 #Start with a base image containing Java runtime
-FROM openjdk:21
+FROM eclipse-temurin:21-jdk
+
 
 #Information around who maintains the image
 LABEL "org.opencontainers.image.authors"="nadhem.com"
