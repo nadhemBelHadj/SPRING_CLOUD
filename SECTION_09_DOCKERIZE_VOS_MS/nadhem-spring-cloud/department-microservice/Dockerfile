@@ -1,4 +1,8 @@
 #Start with a base image containing Java runtime
+<<<<<<< HEAD
+=======
+#FROM openjdk:21
+>>>>>>> f3d6132 (Update Dockerfile)
 FROM eclipse-temurin:21-jdk
 
 #Information around who maintains the image
